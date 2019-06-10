@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Uber Automation Script ]" parallel="methods">
+  <parameter name="cloud" value="false"/>
+  <parameter name="envName" value="Browserstack"/>
+  <parameter name="browserVersion" value="74.0"/>
+  <parameter name="platform" value="windows"/>
+  <parameter name="url" value="https://www.uber.com/"/>
+  <test thread-count="4" verbose="0" name="Uber Test(failed)" parallel="methods">
+    <classes>
+      <class name="testHomePage.HomePageTest">
+        <methods>
+          <include name="clickOnOurProductsTest"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- testHomePage.HomePageTest -->
+    </classes>
+  </test> <!-- Uber Test(failed) -->
+</suite> <!-- Failed suite [Uber Automation Script ] -->
